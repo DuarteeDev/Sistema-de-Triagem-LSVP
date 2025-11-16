@@ -1,0 +1,231 @@
+body.page-triagens .container {
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page-triagens .main-content {
+    flex-grow: 1;
+}
+
+.content-area {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.aba-title {
+    display: none;
+}
+
+.filter-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-section form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.filter-inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-weight: 500;
+    color: #343a40;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.filter-inputs-wrapper select,
+.filter-inputs-wrapper input[type="text"],
+.date-range-inputs input[type="date"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    height: 46px;
+}
+
+.filter-group input[name="buscar_nome_cpf"] {
+    width: 220px;
+    flex-grow: 0;
+}
+
+.date-range-inputs {
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.date-range-inputs input[type="date"] {
+    width: 140px;
+    flex-grow: 1;
+}
+
+.filter-group select {
+    width: 180px;
+    flex-grow: 0;
+}
+
+.filter-button,
+.start-new-triage-button {
+    background-color: #007bff;
+    color: white !important;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 12px 20px;
+    font-size: 1em;
+    height: 46px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.filter-button:hover,
+.start-new-triage-button:hover {
+    background-color: #0056b3;
+}
+
+.filter-button {
+    min-width: 180px;
+    width: 200px;
+}
+.start-new-triage-button {
+    min-width: 180px;
+    width: 200px;
+}
+
+.table-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-right: 5px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    table-layout: fixed;
+}
+
+.data-table th, .data-table td {
+    text-align: center;
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+.data-table thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.data-table tbody td {
+   background-color: #fff;
+   border: 1px solid #dee2e6;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 1.1em;
+    background-color: #f8f9fa;
+    border: 1px dashed #ccc;
+}
+
+.btn-action {
+    background-color: #007bff;
+    color: white !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    width: 80px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-action:hover {
+    background-color: #0056b3;
+}
+
+.btn-action.disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.btn-action-delete {
+    background-color: #dc3545;
+    color: white !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-action-delete:hover {
+    background-color: #c82333;
+}
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
